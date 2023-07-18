@@ -1,0 +1,81 @@
+.right_container_main{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 70%;
+}
+.profile_info{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    /* background:  rgba(38, 221, 227, 0.8); */
+    background: rgba(0, 255, 213, 0.884);
+}
+.right_container_profile_name{
+    flex: 1;
+    width: 100%;
+    color:#f0f2f5;
+}
+.right_container_profile_search{
+    display: flex;
+}
+.right_container_message_section{
+    flex:1;
+    background: url("https://wallpapercave.com/wp/wp10254485.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    overflow-y: scroll;
+}
+.right_container_message{
+    margin-top: 10px;
+    /* background: greenyellow; */
+    margin-left: 20px;
+    padding-left: 10px;
+    min-width: 300px;
+    width: fit-content;
+    max-width: 70%;
+    max-height: 50%;
+    /* overflow-x: hidden;
+    overflow-y: hidden;
+    overflow-y: scroll; */
+    border-radius: 5px;
+    /* width:40%; */
+    background: whitesmoke;
+}
+.right_container_message_detail{
+    display: flex;
+    justify-content: space-between;
+}
+.right_container_message_content{
+    display: block;
+    overflow-wrap: break-word;
+    /* flex-grow: 1; */
+}
+.right_container_footer{
+    display: flex;
+    align-items: center;
+    max-height: 800px;
+    justify-content: centre;
+    height: 60px;
+    background: rgba(0, 255, 213, 0.884);
+    /* width: 100%; */
+}
+.right_container_footer_input{
+    width: 100%;
+}
+.right_container_footer_input input{
+    width: 100%;
+    font-size: larger;
+    /* color: aqua; */
+    color:rgba(2, 56, 47, 0.884);
+    border-radius: 10px;
+}
+.right_container_footer_input input{
+    flex: 1;
+    width: 100%;
+}
+.right_container_message::-webkit-scrollbar {
+    width: 0px;
+}
