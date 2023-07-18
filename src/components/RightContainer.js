@@ -7,7 +7,8 @@ import {useDispatch, useSelector} from "react-redux"
 import { getFriends, setFriendArray } from '../redux/slices/userSlice'
 
 let socket;
-const ENDPOINT = "http://localhost:5000";
+// const ENDPOINT = "http://localhost:5000";
+const ENDPOINT = "https://chat-app-gautam-8294.vercel.app/";
 socket = io(ENDPOINT);
 const RightContainer = () => {
     axios.defaults.withCredentials = true;

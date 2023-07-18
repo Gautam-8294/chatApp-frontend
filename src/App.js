@@ -1,15 +1,15 @@
 import './App.css';
-import axios from './api/axios.js';
+// import axios from './api/axios.js';
 import Home from './components/Home';
 // import Icon from '@mui/material/Icon';
 // import EmojiEmotionsOutlinedIcon from '@mui/icons-material/EmojiEmotionsOutlined';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import About from './components/About';
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 import { useEffect, useState } from 'react';
-import Login from './components/Login';
+// import Login from './components/Login';
 import SignUp from './components/SignUp';
-import User from './components/User';
+// import User from './components/User';
 import RequiredAuth from './utils/RequiredAuth';
 import Error from './components/Error';
 import RequiredLogin from './components/RequiredLogin';
@@ -25,27 +25,7 @@ function App() {
   useEffect(()=>{},[])
 
   const [hello, setHello] = useState([]);
-  const [initialStore, setInitialStore] = useState([]);
 
-  // const getMessage = async()=>{
-  //   // axios.get("/message").then((response)=>{
-  //   //   setHello(response.data.portal);
-  //   // }).catch((err)=>{
-  //   //   console.log(err) 
-  //   // })
-  //   try{
-  //     const resp = await axios("user");
-  //   setHello(resp.data.friends[1].message[1].content);
-  //   setInitialStore(resp.data);
-  //   }
-  //   catch(err){
-  //     console.log(err);
-  //   }
-  // }
- 
-  // useEffect(()=>{
-  //   getMessage();
-  // },[hello])
   
   // isLoggedIn ? <User /> : <Login />
   

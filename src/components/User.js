@@ -11,7 +11,8 @@ import io from "socket.io-client"
 import { getFriends, getUserDetails } from '../redux/slices/userSlice'
 import store from '../redux/store'
 
-const ENDPOINT = "http://localhost:5000";
+// const ENDPOINT = "http://localhost:5000";
+const ENDPOINT = "https://chat-app-gautam-8294.vercel.app/";
 let socket;
 // console.log(document.cookie.split("=")[1]);
 // console.log(window.localStorage.getItem('jwt_token'));
