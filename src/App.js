@@ -35,11 +35,11 @@ function App() {
     {hello}
     <Routes>
       <Route path='/' element ={<Home />}></Route>
-      <Route path='/user' element ={<RequiredAuth />}></Route>
-      <Route path='/about' element ={<About />}></Route>
-      <Route path='/login' element ={<RequiredLogin />}></Route>
-      <Route path='/signup' element ={<SignUp />}></Route>
-      <Route path='/error' element ={<Error />}></Route>
+      <Route path='user' element ={<RequiredAuth />}></Route>
+      <Route path='about' element ={<About />}></Route>
+      <Route path='login' element ={<RequiredLogin />}></Route>
+      <Route path='signup' element ={<SignUp />}></Route>
+      <Route path='error' element ={<Error />}></Route>
     </Routes>
     </>
   );
