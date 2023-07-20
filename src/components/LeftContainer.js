@@ -52,8 +52,8 @@ const LeftContainer = () => {
         }
         window.localStorage.clear();
         document.cookie = "jwt_token" + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
-        dispatch(getUserDetails());
-        dispatch(getFriends());
+        // dispatch(getUserDetails());
+        // dispatch(getFriends());
         navigate("/login");
     }
     const handleRightContainer = (event) => {
