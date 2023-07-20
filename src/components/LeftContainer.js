@@ -10,7 +10,8 @@ import { getFriends, setFriendArray, setFriendId } from '../redux/slices/userSli
 
 let socket;
 // const ENDPOINT = "http://localhost:5000";
-const ENDPOINT = "https://chat-app-gautam-8294.vercel.app/";
+// const ENDPOINT = "https://chat-app-gautam-8294.vercel.app/";
+const ENDPOINT = "https://chatapp-fqlj.onrender.com/";
 socket = io(ENDPOINT);
 const SearchBoX = ({ placeholder }) => {
     return (
