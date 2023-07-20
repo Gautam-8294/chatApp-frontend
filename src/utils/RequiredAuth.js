@@ -13,13 +13,19 @@ const RequiredAuth = () => {
   //   console.log(event);
   //   navigate("/login")
   // }
-  if(!document.cookie && (document.cookie.split("=")[1] !== window.localStorage.getItem('jwt_token'))){
+  // if(!document.cookie && (document.cookie.split("=")[1] !== window.localStorage.getItem('jwt_token'))){
+  //   return (
+  //     <Navigate to="/login" />
+    
+  //   )
+  // }
+  
+  if(window.localStorage.getItem("isLoggedIn")!== true){
     return (
       <Navigate to="/login" />
     
     )
   }
-  
   
   return <User />;
 }
