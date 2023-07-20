@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'
 import User from '../components/User'
-
+import { useSelector } from 'react-redux'
 const RequiredAuth = () => {
   const navigate = useNavigate();
   
   useEffect(()=>{
     return ()=>{};
   },[])
-  
+  const loading = useSelector(state=>state.user.loading);
   // const handleLoginButton = (event)=>{
   //   console.log(event);
   //   navigate("/login")
@@ -20,7 +20,7 @@ const RequiredAuth = () => {
   //   )
   // }
   
-  if(window.localStorage.getItem("isLoggedIn")!== true){
+  if(loading===false && window.localStorage.getItem("isLoggedIn")!== true){
     return (
       <Navigate to="/login" />
     
