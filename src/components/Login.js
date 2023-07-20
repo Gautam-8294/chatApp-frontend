@@ -28,7 +28,8 @@ const Login = () => {
           // window.localStorage.setItem("user",JSON.stringify(user));
           window.localStorage.setItem("jwt_token",token);
           window.localStorage.setItem("isLoggedIn",true);
-
+          document.cookie = `jwt_token=${token}`;
+          console.log(response.cookies);
           navigate('/user');
         })
         .catch((err)=>{
