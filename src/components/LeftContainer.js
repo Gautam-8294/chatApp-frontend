@@ -5,7 +5,7 @@ import { Chaticon, Communityicon, Filtericon, Menuicon, Searchicon, Statusicon }
 import { useNavigate } from 'react-router-dom'
 import io from 'socket.io-client'
 import { useDispatch, useSelector } from 'react-redux'
-import { getFriends, setFriendArray, setFriendId } from '../redux/slices/userSlice'
+import { getFriends, getUserDetails, setFriendArray, setFriendId } from '../redux/slices/userSlice'
 
 
 let socket;
@@ -52,6 +52,8 @@ const LeftContainer = () => {
         }
         window.localStorage.clear();
         document.cookie = "jwt_token" + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+        dispatch(getUserDetails());
+        dispatch(getFriends());
         navigate("/login");
     }
     const handleRightContainer = (event) => {
